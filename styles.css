@@ -1,3 +1,24 @@
 /* color VERDE #85B172 
 
 FOUNT FAMILY Pristina NEGRITA*/
+
+/* 
+probar en los formularios
+
+input:focus {} --> para que marque el recuadro, por default azul, cuando el usuario clickea
+     o
+input:focus { ----> para que marque con una linea de un color y grosor determinado
+    outline: 4px solid #85B172;
+}
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(hoja.png);
+    background-repeat: repeat;
+    background-size: 80px  ;
+}
