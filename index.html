@@ -63,7 +63,6 @@
             <img src="tecnologias/angularjs.png" height="100px" alt="angularjs"/>
             <img src="tecnologias/css3.png" height="100px" alt="css3"/>
             <img src="tecnologias/git.png" height="100px" alt="git"/>
-            <img src="tecnologias/github.png" height="100px" alt="github"/>
             <img src="tecnologias/html.png" height="100px" alt="html5"/>
             <img src="tecnologias/javascript.png" height="100px" alt="javascript"/>
             <img src="tecnologias/mysql.png" height="100px" alt="mysql"/>
@@ -77,8 +76,21 @@
             <!-- Incluir capturas y links a diferentes proyectos -->
         </section>
 
-        <section>
-            <header> <h2>Vamos a trabajar juntos!</h2> </header>
+        <section id="contacto" aria-labelledby="contacto-headding">
+            <header> <h2 id="contacto-headding">Vamos a trabajar juntos!</h2> </header>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"/>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="asunto"/>
+                <label for="mensaje">Mensaje</label>
+                <input type="text" name="mensaje" id="mensaje"/>
+                <input type="button" name="enviar" id="enviar"/>
+            </form>
+            
+            
             <!-- Incluir un formulario con
             nombre   email
             asunto
@@ -86,6 +98,7 @@
             boton de enviar -->
         </section>
 
+        <a href="#top">Arriba</a>
     </main>
 
     <script defer></script>
