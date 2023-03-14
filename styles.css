@@ -31,3 +31,8 @@ body{
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+form:invalid [type='submit'] {
+    opacity: 50%;
+    pointer-events: none;
+}
