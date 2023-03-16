@@ -78,49 +78,43 @@
 
         <section id="proyectos">
         <h2>Proyectos   </h2>
-        <a href="memo.html" targer="_blank">Memotest</a>
-            &#x1F600;
-            &#x1F601;
-            &#x1F602;
-            &#x1F603;
-            &#x1F604;
-            &#x1F605;
-            &#x1F606;
-            &#x1F607;
-            &#x1F608;
-            &#x1F609;
-            &#x1F610;
-            &#x1F611;
-            &#x1F612;
-            &#x1F613;
+        <a href="memo.html" target="_blank">Memotest</a>
+        
             <!-- Incluir capturas y links a diferentes proyectos -->
         </section>
 
         <section id="contacto" aria-labelledby="contacto-headding">
             <h2 id="contacto-headding">Vamos a trabajar juntos!</h2>
-            <form action="" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" required/>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required/>
-                <label for="asunto">Asunto</label>
-                <input type="text" name="asunto" id="asunto" required/>
-                <label for="mensaje">Mensaje</label>
-                <input type="text" name="mensaje" id="mensaje" required/>
+            <form id="formulario"  action="" method="post">
+                
+                <div class="grupo" id="grupo__nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required/>
+                </div>
+               
+                <div id="grupo__email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required/>
+                </div>
+                
+                <div id="grupo__asunto">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" required/>
+                </div>
+                
+                <div id="grupo__mensaje">
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" name="mensaje" id="mensaje" required/>
+                </div>
+                
                 <input type="submit" value="Enviar" name="enviar" id="enviar"/>
             </form>
-            
-            
-            <!-- Incluir un formulario con
-            nombre   email
-            asunto
-            mensaje
-            boton de enviar -->
+       
         </section>
 
         <a href="#top">Arriba</a>
     </main>
-
+    <script src="formulario.js"></script>
     <script defer></script>
 </body>
 <footer>

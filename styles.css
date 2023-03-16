@@ -5,8 +5,6 @@
     color oscuro #736E6B
 
 
-FOUNT FAMILY del icon Pristina NEGRITA*/
-
 /* 
 probar en los formularios
 
@@ -30,7 +28,7 @@ body{
     background-color: #736E6B;
 }
 
-
+/*    ------ESTILOS DEL SCROLLBAR-----           */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -42,6 +40,7 @@ body{
     background: #736E6B;
 }
 
+/*           ------ ESTILOS DEL NAV -------         */
 header {
     display: block;
     background-color: #736E6B;
@@ -85,6 +84,8 @@ nav a:hover{
     font-weight: bold;
 }
 
+/*        ----- ESTILOS DE LAS SECTIONS -----           */
+
 section{
     display: block;
     padding-top: 220px;
@@ -99,16 +100,37 @@ section{
     padding-bottom: 216px;
     text-align: center;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
-    
 }
 
-#acerca {
+#acerca, #proyectos {
     display: block;
     background-color: #85B172 ;
     padding-top: 150px;
     padding-bottom: 150px;
     text-align: center;
 }
+
+#tecnologias, #contacto {
+    display: block;
+    background-color: #FFF5EE ;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+/*         --------- ESTILOS DEL FORMULARIO -------          */
+input:focus {
+    border-color: 5px solid green;
+}
+
+#grupo__nombre__error input {
+    border: 4px solid crimson;
+}
+
+
+
+
+/*              ------ ESTILOS DE TEXTOS --------          */
 
 span {
     float: left;
