@@ -11,7 +11,21 @@ const expresiones= {
 const validarFormulario = (e) => {
    switch (e.target.name) {
     case "nombre":
-        console.log('Funciona!');
+        if(expresiones.nombre.test(e.target.value)){
+            document.getElementById('grupo__nombre').classList.remove('formulario__grupo-incorrect');
+            document.getElementById('grupo__nombre').classList.add('formulario__grupo-correct');
+        } else{
+            document.getElementById('grupo__nombre').classList.add('formulario__grupo-incorrect');
+        }
+    break;
+    case "asunto":
+        
+    break;
+    case "email":
+        
+    break;
+    case "mensaje":
+        
     break;
    }
 };
