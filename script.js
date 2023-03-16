@@ -1,4 +1,4 @@
-const emojis = ['', '', '', ]
+const emojis = ['🐝', '🐛', '🦋', '🐌', '🐞', '🐜', '🪰', '🦗']
 
 /* constatntes variables que no se modifican*/
 
