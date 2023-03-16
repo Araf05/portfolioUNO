@@ -58,22 +58,30 @@ nav {
     display: block;
     float: left;
     font-size: 20px;
+    font-weight: 700;
     padding: 10px;
-    color: #85B172;
+    color: #FFF5EE;
 }
 
-nav a{
+#nav_araf:hover{
+    background: none;
+    color:#85B172;
+}
+
+nav a {
     display: block;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     padding: 10px;
-    color: #85B172;
+    color: #FFF5EE;
     text-decoration: none;
 }
 
 nav a:hover{
     background: #FFF5EE;
+    color:#85B172;
+    font-weight: bold;
 }
 
 
@@ -103,6 +111,10 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100px;
     text-shadow: 5px 5px #85B172 ;
+}
+
+h2, h3, h4 {
+    font-family: 'Kurale', serif;
 }
 
 
