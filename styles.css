@@ -80,14 +80,29 @@ nav a:hover{
 #principal {
     display: block;
     background-color: #FFF5EE;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 220px;
+    padding-bottom: 220px;
     text-align: center;
-    
     
 }
 
+#acerca {
+    display: block;
+    background-color: #85B172 ;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+span {
+    float: left;
+}
+
+
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    text-shadow: 5px 5px #85B172 ;
 }
+
 
