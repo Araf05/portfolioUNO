@@ -64,15 +64,16 @@ nav {
 }
 
 #nav_araf:hover{
-    background: none;
-    color:#85B172;
+    background: #85B172;
+    text-shadow: 2px 2px #736E6B;
+    color: #FFF5EE;
 }
 
 nav a {
     display: block;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
     color: #FFF5EE;
     text-decoration: none;
@@ -82,6 +83,7 @@ nav a:hover{
     background: #FFF5EE;
     color:#85B172;
     font-weight: bold;
+    border-bottom: 3px solid #85B172;
 }
 
 /*        ----- ESTILOS DE LAS SECTIONS -----           */
@@ -118,30 +120,50 @@ nav a:hover{
 }
 
 /*         --------- ESTILOS DEL FORMULARIO -------          */
+#trabajemos {
+    display: block;
+    float: left;
+}
+
+#trabajemos h2 {
+    font-size: 40px;
+    color: #85B172;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
 form {
     background: #85B172;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
     padding: 2vw 4vw;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
 }
 
-form h2 {
-    color: #FFF5EE;
-    font-weight: 800;
-    margin-bottom: 20px;
+
+
+.input_grupo {
+   
 }
 
-form input, form textarea{
+input, textarea{
+    width: 100%;
     border: 0;
     margin: 10px 0;
     padding: 10px;
     outline: none;
     background: #FFF5EE;
-    font-size: 16px;
+    font-size: 11px;
     border-radius: 10px;
+}
+
+label {
+    font-family: 'Kurale', serif;
+    font-size: 16px;
+    
 }
 
 form button{
