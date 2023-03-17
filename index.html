@@ -84,33 +84,24 @@
         </section>
 
         <section id="contacto" aria-labelledby="contacto-headding">
-            <h2 id="contacto-headding">Vamos a trabajar juntos!</h2>
+        
             <form id="formulario"  action="" method="post">
+                <h2>Vamos a trabajar juntos!</h2>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required/>
+
+                <input type="email" name="email" id="email" placeholder="Email" required/>
+
+                <input type="tel" name="email" id="tel" placeholder="Teléfono" required/>
+
+                <input type="text" name="asunto" id="asunto" placeholder="Asunto" required/>
+
+                <textarea id="mensaje" rows="4" required></textarea>
                 
-                <div class="grupo" id="grupo__nombre">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" required/>
-                </div>
-               
-                <div id="grupo__email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required/>
-                </div>
-                
-                <div id="grupo__asunto">
-                    <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto" id="asunto" required/>
-                </div>
-                
-                <div id="grupo__mensaje">
-                    <label for="mensaje">Mensaje</label>
-                    <input type="text" name="mensaje" id="mensaje" required/>
-                </div>
-                
-                <input type="submit" value="Enviar" name="enviar" id="enviar"/>
+                <button type="submit">Enviar</button>
             </form>
-       
+            
         </section>
+        
 
         <a href="#top">Arriba</a>
     </main>
