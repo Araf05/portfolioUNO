@@ -123,6 +123,47 @@ main {
     justify-content: center;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
 }
+/*      -----------  ESTILOD DE PROYECTOS -----------        */
+#proyectos h2 {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    color: #FFF5EE;
+    font-size: 80px;
+    text-shadow: 2px 2px #736E6B;
+}
+#proyecto_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #FFF5EE;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#proyecto_flex .proyecto_tarjeta {
+    background: #FFF5EE;
+    width: 200px;
+    line-height: 200px;
+    margin: 10px;
+    border: 2px solid #736E6B;
+    border-radius: 10px;
+    box-shadow: 3px 3px #85B172;
+}
+#proyecto_flex .proyecto_tarjeta a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:#736E6B;
+    font-size: 20px;
+}
+
+
+
+
+
 
 /*         --------- ESTILOS DEL FORMULARIO -------          */
 #trabajemos {
