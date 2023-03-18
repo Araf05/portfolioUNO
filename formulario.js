@@ -11,8 +11,9 @@ document.getElementById('formulario')
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Mensaje enviado';
-      alert('Mensaje enviado con éxito!');
+      btn.value = 'Enviar';
+      alert('Mensaje enviado exitosamente!');
+      document.getElementById('formulario').reset();
     }, (err) => {
       btn.value = 'Enviar';
       alert(JSON.stringify(err));

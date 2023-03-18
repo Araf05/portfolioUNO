@@ -101,7 +101,7 @@
                 <h2>Vamos a trabajar juntos!</h2>
             </div>
         
-            <form id="formulario"  action="enviar-email.php" method="post">
+            <form id="formulario"  action="formulario.js" method="post">
                 
                 <div class="row">
                     <div class="input_grupo">
@@ -127,11 +127,11 @@
                 </div>
 
                 <div class="input_grupo">    
-                    <textarea id="mensaje" rows="10" required></textarea>
+                    <textarea name="mensaje" id="mensaje" rows="10" required></textarea>
                     <label for="mensaje"><i class="fas fa-comments"></i> Mensaje</label>
                 </div>
-
-                <button type="submit"  id="button">Enviar <i class="fas fa-paper-plane"></i></button>
+                <input type="submit" id="button" value="Enviar" >
+                <!-- <button type="submit"  id="button">Enviar <i class="fas fa-paper-plane"></i></button> -->
             </form>
             
         </section>
