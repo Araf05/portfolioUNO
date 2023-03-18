@@ -30,7 +30,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/729a704aec.js" crossorigin="anonymous" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('emNgxu-KSVjUI7H4P')</script>
 
 </head>
 
@@ -52,7 +54,7 @@
             <h3>Desarrolladora Front-end</h3>
         </div>
 
-        <section id="acerca">
+        <section class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="acerca">
             <h2>Acerca de</h2>
             <img src="icon.png" width="200px" height="200px"  alt="Icono del portfolio"/>  
             <span><h4>Desarrolladora front-end en constante formación 
@@ -65,13 +67,24 @@
 
         <section id="tecnologias">
             <h2>Tecnologias</h2>
-            <img src="tecnologias/angularjs.png" height="100px" alt="angularjs"/>
-            <img src="tecnologias/css3.png" height="100px" alt="css3"/>
-            <img src="tecnologias/git.png" height="100px" alt="git"/>
-            <img src="tecnologias/html.png" height="100px" alt="html5"/>
-            <img src="tecnologias/javascript.png" height="100px" alt="javascript"/>
-            <img src="tecnologias/mysql.png" height="100px" alt="mysql"/>
-            <img src="tecnologias/react.png" height="100px" alt="react"/>
+            <div class="row" >
+                <img src="tecnologias/angularjs.png" height="100px" alt="angularjs"/>
+                <img src="tecnologias/css3.png" height="100px" alt="css3"/> 
+            </div>
+            
+            <div class="row">
+                <img src="tecnologias/git.png" height="100px" alt="git"/>
+                <img src="tecnologias/html.png" height="100px" alt="html5"/>
+            </div>
+
+            <div class="row">
+                <img src="tecnologias/javascript.png" height="100px" alt="javascript"/>
+                <img src="tecnologias/mysql.png" height="100px" alt="mysql"/>
+            </div>
+
+            <div class="row">
+                <img src="tecnologias/react.png" height="100px" alt="react"/>
+            </div>
 
             <!-- incluir logos de los dif lenguajes -->
         </section>
@@ -88,36 +101,37 @@
                 <h2>Vamos a trabajar juntos!</h2>
             </div>
         
-            <form id="formulario"  action="" method="post">
+            <form id="formulario"  action="enviar-email.php" method="post">
                 
-                
-                <div class="input_grupo">
-                    <input type="text" name="nombre" id="nombre"  required/>
-                    <label for="nombre">Nombre</label>
+                <div class="row">
+                    <div class="input_grupo">
+                        <input type="text" name="nombre" id="nombre"  required/>
+                        <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                    </div>  
+                    <div class="input_grupo">
+                        <input type="tel" name="tel" id="tel" required/>
+                        <label for="tel"><i class="fas fa-phone"></i> Teléfono</label>
+                    </div>
                 </div>
+                
                
                 <div class="input_grupo">
                     <input type="email" name="email" id="email"  required/>
-                    <label for="emil">Email</label>
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
                 </div>
 
-
-                <div class="input_grupo">
-                    <input type="tel" name="email" id="tel" required/>
-                    <label for="tel">Telefono</label>
-                </div>
                
                 <div class="input_grupo">
                     <input type="text" name="asunto" id="asunto" required/>
-                    <label for="asunto">Asunto</label>
+                    <label for="asunto"><i class="fas fa-comment-dots"></i> Asunto</label>
                 </div>
 
                 <div class="input_grupo">    
-                    <textarea id="mensaje" rows="4"  required></textarea>
-                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="10" required></textarea>
+                    <label for="mensaje"><i class="fas fa-comments"></i> Mensaje</label>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit"  id="button">Enviar <i class="fas fa-paper-plane"></i></button>
             </form>
             
         </section>

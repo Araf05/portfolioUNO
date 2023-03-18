@@ -30,7 +30,7 @@ body{
 
 /*    ------ESTILOS DEL SCROLLBAR-----           */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1vw;
 }
 ::-webkit-scrollbar-thumb {
     background: #85B172;
@@ -87,6 +87,11 @@ nav a:hover{
 }
 
 /*        ----- ESTILOS DE LAS SECTIONS -----           */
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 #principal {
     display: flex;
@@ -143,30 +148,57 @@ form {
     border-radius: 10px;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.row .input_grupo{
+    flex-basis: 48%;
+}
 
 .input_grupo {
-   
+    margin: 10px 0;
+    position: relative;
 }
 
 input, textarea{
     width: 100%;
+    margin: 5px 0;
     border: 0;
-    margin: 10px 0;
     padding: 10px;
     outline: none;
     background: #FFF5EE;
-    font-size: 11px;
+    font-size: 14px;
     border-radius: 10px;
 }
 
-label {
-    font-family: 'Kurale', serif;
-    font-size: 16px;
+textarea {
+    resize: none;
     
 }
 
-form button{
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    cursor: text;
+    font-family: 'Kurale', serif;
+    font-size: 16px;
+    color: #736E6B;
+    transition: 0.2s;
+}
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label {
+    top: -30px;
+    font-size: 14px;
+    color: #FFF5EE;
+}
+
+form #button{
     padding: 15px;
     background: #736E6B;
     color: #FFF5EE;
@@ -179,6 +211,7 @@ form button{
     margin: 20px auto 0;
 
 }
+
 
 /*
 input:focus {

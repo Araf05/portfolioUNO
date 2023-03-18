@@ -1,40 +1,20 @@
-const formulario = document.getElementById('formulario');
-const input = document.querySelectorAll ('#formulario input');
+const btn = document.getElementById('button');
 
-const expresiones= {
-    nombre: /^[a-zA-ZÁ-ÿ\s]{1,40}$/, //Letras y espacios, pueden llevar acentos
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    asunto: /^[a-zA-ZÁ-ÿ\s\.\,]{1,40}$/,
-    mensaje: /^[a-zA-ZÁ-ÿ\s\.\,\:\;\"\-\_\!\?]{1,500}$/
-}
+document.getElementById('formulario')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-const validarFormulario = (e) => {
-   switch (e.target.name) {
-    case "nombre":
-        if(expresiones.nombre.test(e.target.value)){
-            document.getElementById('grupo__nombre').classList.remove('formulario__grupo-incorrect');
-            document.getElementById('grupo__nombre').classList.add('formulario__grupo-correct');
-        } else{
-            document.getElementById('grupo__nombre').classList.add('formulario__grupo-incorrect');
-        }
-    break;
-    case "asunto":
-        
-    break;
-    case "email":
-        
-    break;
-    case "mensaje":
-        
-    break;
-   }
-};
+   btn.value = 'Enviando...';
 
-input.forEach((input) => {
-    input.addEventListener('keyup', validarFormulario),
-    input.addEventListener('blur', validarFormulario)
+   const serviceID = 'default_service';
+   const templateID = 'template_1lvy0tq';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Mensaje enviado';
+      alert('Mensaje enviado con éxito!');
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
 });
-
-formulario.addEventListener('submit', (e) => {
-    e.prevenDefault();
-})
