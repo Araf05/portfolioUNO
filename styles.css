@@ -42,35 +42,38 @@ body{
 
 /*           ------ ESTILOS DEL NAV -------         */
 header {
-    display: block;
     background-color: rgba(115, 110, 107, 0.7);
     box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
     width: 100%;
+
     position: fixed;
     z-index: 100;
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    display: flex;
     float: left;
+    height: 42px; 
+    padding: 0 3px;
 }
 
-#nav_araf{
-    display: block;
-    float: left;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px;
-    color: #FFF5EE;
+ .nav_logo:hover{
+    background: #FFF5EE;
+    border-radius: 50px;
 }
 
-#nav_araf:hover{
-    background: #85B172;
-    text-shadow: 2px 2px #736E6B;
-    color: #FFF5EE;
+.nav_menu {
+    display: flex;
+    list-style: none;
 }
 
-nav a {
-    display: block;
+nav ul li a {
+    display: flex;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -79,7 +82,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+nav ul li a:hover{
     background: #FFF5EE;
     color:#85B172;
     font-weight: bold;
@@ -124,6 +127,57 @@ main {
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
 }
 /*      -----------  ESTILOD DE PROYECTOS -----------        */
+
+#proyectos {
+    height: auto;
+    min-height: 100vh;
+}
+
+#proyectos .proyectos-container {
+    position: relative;
+    width: 60%;
+    height: auto;
+    -webkit-backdrop-filter: blur(6.2px);
+    backdrop-filter: blur(6.2px);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    border: 1 solid rgba(255, 255, 255, 0.24);
+}
+
+.proyectos-cantainer .tarjetas-grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+}
+
+.tarjeta {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.tarjeta-frente, .tarjeta-reverso {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #FFF5EE;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+}
+
+.tarjeta-reverso {
+    transform: rotateY(180deg) rotateZ(50deg);
+    font-size: 28pt;
+    user-select: none;
+    text-align: center;
+    line-height: 300px;
+    background: #dfdac8;
+    border: 1px solid #9e9e9e;
+}
+/*
 #proyectos h2 {
     display: block;
     padding: 10px;
@@ -144,7 +198,7 @@ main {
 }
 
 #proyecto_flex .proyecto_tarjeta {
-    background: #FFF5EE;
+    background-image: url("proyects/memo.png");
     width: 200px;
     line-height: 200px;
     margin: 10px;
@@ -152,6 +206,8 @@ main {
     border-radius: 10px;
     box-shadow: 3px 3px #85B172;
 }
+
+
 #proyecto_flex .proyecto_tarjeta a {
     display: block;
     text-decoration: none;
@@ -159,7 +215,7 @@ main {
     color:#736E6B;
     font-size: 20px;
 }
-
+*/
 
 
 
@@ -254,33 +310,6 @@ form #button{
 }
 
 
-/*
-input:focus {
-    border: 4px solid #736E6B;
-}
-
-
-.formulario__grupo-correcto .formulario__validacion-estado{
-    color: #85B172;
-    opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__label{
-    color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado{
-    color: #bb2929;
-    opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input{
-    border: 3px solid #bb2929;
-}
-
-*/
-
-
 /*              ------ ESTILOS DE TEXTOS --------          */
 
 span {
@@ -289,9 +318,9 @@ span {
 
 
 h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 200px;
-    text-shadow: 5px 5px #85B172 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+   
 }
 
 h2, h3, h4 {
