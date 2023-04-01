@@ -155,8 +155,18 @@ h1 {
     justify-content: space-around;
 }
 
+/*      -----------  ESTILOS DE ACERCA DE -----------       */
+#tecnologias h2 {
+    display: block;
+    margin-right: 50px;
+    font-size: 50px;
+}
 
-
+#tecnologias .tecnologias_logos {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 50px;
+}
 
 
 /*      -----------  ESTILOS DE PROYECTOS -----------       */
