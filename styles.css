@@ -147,13 +147,19 @@ h1 {
     backdrop-filter: blur(10px);
 }
 
+/*      -----------  ESTILOS DE ACERCA DE -----------       */
+
+#acerca {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
 
 
 
-
-/*      -----------  ESTILOS DE PROYECTOS -----------        */
+/*      -----------  ESTILOS DE PROYECTOS -----------       */
 
 #proyectos {
     height: auto;
