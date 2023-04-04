@@ -33,7 +33,7 @@ body{
     width: 1vw;
 }
 ::-webkit-scrollbar-thumb {
-    background: #85B172;
+    background: linear-gradient(90deg,  #c5bcb7, #FFF5EE, #d6cdc7);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
@@ -134,6 +134,11 @@ h1 {
     font-size: 100px;
 }
 
+#principal {
+    display: flex;
+    flex-direction: column;
+}
+
 #principal .foto img{
     width: 300px;
     border-radius: 50%;
@@ -144,7 +149,13 @@ h1 {
     display: flex;
     align-items: center;
     width: 80%;
-    backdrop-filter: blur(10px);
+}
+
+.hojas img{
+    display: flex;
+    width: 50px;
+    height: auto;
+    margin-top: 50px;
 }
 
 /*      -----------  ESTILOS DE ACERCA DE -----------       */
@@ -155,7 +166,20 @@ h1 {
     justify-content: space-around;
 }
 
-/*      -----------  ESTILOS DE ACERCA DE -----------       */
+
+#acerca a {
+    display: flex;
+    padding: 15px;
+    background-color: #736E6B;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #FFF5EE;
+    text-decoration: none;
+}
+
+
+/*      -----------  ESTILOS DE TECNOLOGIAS -----------       */
 #tecnologias h2 {
     display: block;
     margin-right: 50px;
