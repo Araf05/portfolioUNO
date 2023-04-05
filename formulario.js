@@ -26,6 +26,27 @@ window.onscroll = function(){
   }
 }
 
+// CARRUSEL
+const tarjetaContainer = document.querySelector('.tarjeta-container')
+const punto = document.querySelectorAll('.punto')
+
+punto.forEach( (cadaPunto, i) => {
+  punto[i].addEventListener('click', () => {
+    let posicion = i
+    let operacion = posicion * -13.09
+
+    tarjetaContainer.style.transform = `translateX(${ operacion }%)`
+
+    punto.forEach( ( cadaPunto, i ) => {
+      punto[i].classList.remove('activo')
+    })
+    punto[i].classList.add('activo')
+  })
+})
+  
+
+
+
 
 //   FORMULARIO
 
