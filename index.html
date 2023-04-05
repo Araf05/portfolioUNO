@@ -11,8 +11,6 @@
     <link rel="icon" size="16x16 32x32 48x48 64x64" type="image/png" href="icon-fav.png"/>
     <title>Araf</title>
     
-    <link rel="apple-touch-icon" size="180x180" href="icon-fav.png"/>
-    <link rel="mask-icon" href="icon-fav.png" color="#85B172"/>
    
     <!-- OG Facebook  -->
     <meta property="og:title" content="ARAF"/>
@@ -48,9 +46,10 @@
             </ul> 
         </nav>
     </header>
-    
    
     <main>
+      
+
         <section id="principal">
             <div class="titulo_principal">
                 <div class="foto"><img src="icon.png" alt="Foto"></div>
@@ -90,63 +89,25 @@
         </section>
 
         <section id="proyectos">
-            <div class="proyecto_container">
-                <h2>Proyectos</h2> 
+            <h2>Proyectos</h2> 
 
-                <div class="proyectos-flex">
-                    <div class="tarjetas">
-                        <img class="captura" src="proyects/memo.png" alt="memo">
-                        <p><a href="https://araf05.github.io/Memotest/" target="_blank">Memotest</a></p>
-                        <div class="tecno">
-                            <img src="tecnologias/javascript.png" alt="Javascript">
-                            <img src="tecnologias/html.png" alt="HTML5">
-                            <img src="tecnologias/css3.png" alt="CSS3">
-                        </div>
+            <div class="proyectos-flex">
+                <div class="tarjetas">
+                    <img class="captura" src="proyects/memo.png" alt="memo">
+                    <p><a href="https://araf05.github.io/Memotest/" target="_blank">Memotest</a></p>
+                    <div class="tecno">
+                        <img src="tecnologias/javascript.png" alt="Javascript">
+                        <img src="tecnologias/html.png" alt="HTML5">
+                        <img src="tecnologias/css3.png" alt="CSS3">
                     </div>
                 </div>
-
             </div>
 
         </section>
-<!--  
-        <section id="proyectos">
-            <h2>Proyectos</h2> 
-            <div class="container" id="proyecto_flex">
-                 
-                <div class="proyecto_tarjeta">
-                    <a href="https://araf05.github.io/Memotest/" target="_blank"></a>
-                </div>
-            
-                <div class="proyecto_tarjeta">
-                    <a href="" target="_blank">Calculadora</a>
-                </div>
-            
-                <div class="proyecto_tarjeta">
-                    <a href="" target="_blank">Otro proyecto 1</a>
-                </div>
-            
-                <div class="proyecto_tarjeta">
-                    <a href="" target="_blank">Otro proyecto 2</a>
-                </div>
-            
-                <div class="proyecto_tarjeta">
-                    <a href="" target="_blank">Otro proyecto 3</a>
-                </div>
-            
-                <div class="proyecto_tarjeta">
-                    <a href="" target="_blank">Otro proyecto 4</a>
-                </div>
-                   
-            </div>
-            <  Incluir capturas y links a diferentes proyectos  >
-        
--->
 
-        <section id="contacto" aria-labelledby="contacto-headding">
-            <div id="trabajemos">
-                <h2>Vamos a trabajar juntos!</h2>
-            </div>
-        
+        <section id="contacto" aria-labelledby="contacto-headding"> 
+            <h2>Vamos a trabajar juntos!</h2>
+            
             <form id="formulario"  action="formulario.js" method="post">
                 
                 <div class="row">
@@ -160,13 +121,11 @@
                     </div>
                 </div>
                 
-               
                 <div class="input_grupo">
                     <input type="email" name="email" id="email"  required/>
                     <label for="email"><i class="fas fa-envelope"></i> Email</label>
                 </div>
-
-               
+            
                 <div class="input_grupo">
                     <input type="text" name="asunto" id="asunto" required/>
                     <label for="asunto"><i class="fas fa-comment-dots"></i> Asunto</label>
@@ -177,13 +136,15 @@
                     <label for="mensaje"><i class="fas fa-comments"></i> Mensaje</label>
                 </div>
                 <input type="submit" id="button" value="Enviar" >
-               
-            </form>
             
+            </form>
+        
+            <div class="button-up">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div> 
         </section>
-        <div class="arriba">
-            <a href="#top">Arriba</a>
-        </div>
+
+        
     </main>
 
     <script src="formulario.js"></script>
