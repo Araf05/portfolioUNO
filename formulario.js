@@ -33,7 +33,7 @@ const punto = document.querySelectorAll('.punto')
 punto.forEach( (cadaPunto, i) => {
   punto[i].addEventListener('click', () => {
     let posicion = i
-    let operacion = posicion * -13.09
+    let operacion = posicion * -20
 
     tarjetaContainer.style.transform = `translateX(${ operacion }%)`
 

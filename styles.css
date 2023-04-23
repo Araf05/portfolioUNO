@@ -18,6 +18,8 @@ body{
 
 h2, h3, h4 {
     font-family: 'Kurale', serif;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*    ------ESTILOS DEL SCROLLBAR-----           */
@@ -39,11 +41,14 @@ header {
     width: 100%;
     position: fixed;
     z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nav_logo {
@@ -86,15 +91,24 @@ main {
     width: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #principal, #acerca, #proyectos, #tecnologias, #contacto {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
     align-items: center;
     justify-content: center;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
+}
+@media (width < 768px) {
+    #principal, #acerca, #proyectos, #tecnologias, #contacto {
+        overflow-x: hidden;
+        min-width: 280px;
+    }
 }
 
 /*         -------- ESTILOS DE PRINCIPAL ---------       */
@@ -104,9 +118,24 @@ h1 {
     font-size: 100px;
 }
 
+@media (width < 768px) {
+    #principal {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 60px;
+    }
+ 
+}
+
+
 #principal {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    background-color: #FFF5EE
+    background-color: #FFF5EE; 
 }
 
 #principal .foto img{
@@ -117,8 +146,9 @@ h1 {
 
 .titulo_principal {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .hojas img{
@@ -127,6 +157,7 @@ h1 {
     height: auto;
     margin-top: 50px;
 }
+
 
 /*      -----------  ESTILOS DE ACERCA DE -----------       */
 
@@ -152,6 +183,7 @@ h1 {
 /*      -----------  ESTILOS DE TECNOLOGIAS -----------       */
 #tecnologias {
     background-color: #FFF5EE;
+    
 }
 
 #tecnologias h2 {
@@ -162,12 +194,22 @@ h1 {
 }
 
 #tecnologias .tecnologias_logos {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    gap: 50px;
-    filter: drop-shadow(0 0 20px #c5bcb7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-
+@media (width < 768) {
+    #tecnologias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #tecnologias h2{
+        display: flex;
+        margin: 0;
+    }
+}
 
 /*      -----------  ESTILOS DE PROYECTOS -----------       */
 #proyectos{
@@ -185,16 +227,17 @@ h2{
 }
 
 .carrusel {
-    width: 90%;
+    width: 40%;
     max-width: 120em;
     overflow-x: hidden;
 }
 
 .tarjeta-container {
-    width: 400%;
+    width: 500%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-around;
+    
 
     transition: all .5s easy;
     transform: translateX(0%);
@@ -207,7 +250,7 @@ h2{
     grid-area: "captura" "p" "tecno";
     background: #FFF5EE;
     border-radius: 10px;
-    margin: 10px 90px;
+    margin: 10px;
     overflow: hidden;
     text-align: center;
     box-shadow: 3px 3px forestgreen;
@@ -282,7 +325,7 @@ form {
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    margin-right: 60px;
+    justify-content: space-around;
 }
 
 .row {
@@ -379,6 +422,7 @@ form #button{
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 60px;
     padding: 5px;
