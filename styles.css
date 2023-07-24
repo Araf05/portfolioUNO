@@ -3,6 +3,39 @@
     color clarito #FFF5EE
     color oscuro #736E6B
 */ 
+/* Pantallas grandes */
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+  h1{
+    font-size: 100px;
+  }
+}
+
+/* Tabletas */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  h1{
+    font-size: 50px;
+  }
+}
+
+/* Celulares */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+  h1{
+    font-size: 40px;
+  }
+}
+
 
 * {
     box-sizing: border-box;
@@ -38,7 +71,7 @@ h2, h3, h4 {
 header {
     background-color: rgba(115, 110, 107, 0.7);
     box-shadow: 0.2em 0.2em 1em rgba(0,0,0,0.3);
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 100;
     display: flex;
@@ -54,7 +87,7 @@ nav {
 .nav_logo {
     display: flex;
     float: left;
-    height: 42px; 
+    height: 2.5rem; 
     padding: 0 3px;
 }
 
@@ -72,7 +105,7 @@ nav ul li a {
     display: flex;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     padding: 10px;
     color: #FFF5EE;
     text-decoration: none;
@@ -88,7 +121,7 @@ nav ul li a:hover{
 
 /*        ----- ESTILOS DE LAS SECTIONS -----           */
 main {
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     display: flex;
@@ -98,64 +131,50 @@ main {
 #principal, #acerca, #proyectos, #tecnologias, #contacto {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
-}
-@media (width < 768px) {
-    #principal, #acerca, #proyectos, #tecnologias, #contacto {
-        overflow-x: hidden;
-        min-width: 280px;
-    }
+    overflow: hidden;
 }
 
 /*         -------- ESTILOS DE PRINCIPAL ---------       */
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 100px;
 }
-
-@media (width < 768px) {
-    #principal {
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-    h1{
-        font-size: 60px;
-    }
- 
-}
-
 
 #principal {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     background-color: #FFF5EE; 
 }
 
 #principal .foto img{
-    width: 300px;
+    display: flex;
+    height: 20vw;
     border-radius: 50%;
-    margin-right: 20px;
+    min-height: 200px;
 }
 
 .titulo_principal {
     display: flex;
     flex-wrap: wrap;
+    width: 70vw;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    /*width: 100vw;*/
 }
 
 .hojas img{
     display: flex;
-    width: 50px;
+    width: 7vw;
+    max-width: 60px;
     height: auto;
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 
 
@@ -197,12 +216,18 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
+#tecnologias .tecnologias_logos .img {
+    display: flexbox;
+    padding-bottom: 20vh;
+}
+
 @media (width < 768) {
     #tecnologias{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
     }
     #tecnologias h2{
@@ -225,17 +250,18 @@ h2{
     text-align: center;
     margin-top: 40px;
 }
+/*
 
 .carrusel {
-    width: 40%;
-    max-width: 120em;
+    width: 60vw;
+    max-width: 50vw;
     overflow-x: hidden;
 }
 
 .tarjeta-container {
-    width: 500%;
+    width: 500vw;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     
 
@@ -245,19 +271,19 @@ h2{
 
 .tarjeta {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 230px 50px 50px;
+    grid-template-columns: 90vw;
+    grid-template-rows: 50vh 10vh 10vh;
     grid-area: "captura" "p" "tecno";
     background: #FFF5EE;
     border-radius: 10px;
-    margin: 10px;
+    margin: auto;
     overflow: hidden;
     text-align: center;
     box-shadow: 3px 3px forestgreen;
 }
 
 .carrusel .puntos {
-    width: 100%;
+    width: 40vw;
     padding: 1em;
     display: flex;
     flex-flow: row nowrap;
@@ -279,7 +305,7 @@ h2{
 }
 
 .captura {
-    width: 100%;
+    width: 30vw;
 }
 
 .tarjeta p a {
@@ -297,11 +323,11 @@ h2{
 }
 
 .tarjeta .tecno img {
-    height: 40px;
+    height: 8vh;
     margin-top: 5px;
 }
 
-
+*/
 
 /*         --------- ESTILOS DEL FORMULARIO -------          */
 #contacto {

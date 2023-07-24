@@ -25,7 +25,7 @@ window.onscroll = function(){
     buttonUp.style.transform = 'scale(0)';
   }
 }
-
+/*
 // CARRUSEL
 const tarjetaContainer = document.querySelector('.tarjeta-container')
 const punto = document.querySelectorAll('.punto')
@@ -44,6 +44,7 @@ punto.forEach( (cadaPunto, i) => {
   })
 })
   
+*/
 
 
 
