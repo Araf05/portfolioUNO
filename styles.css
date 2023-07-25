@@ -47,6 +47,7 @@
 body{
     background-color: #736E6B;
     overflow-x: hidden;
+    text-align: center;
 }
 
 h2, h3, h4 {
@@ -250,6 +251,60 @@ h2{
     text-align: center;
     margin-top: 40px;
 }
+
+#proyectos-container{
+    margin: 0 auto;
+    width: 60vw;
+
+    /* GRID STYLE */
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    
+}
+
+.box{
+    position: relative;
+    height: 60vh;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #736E6B;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+    margin: 0 5px;
+}
+
+.box .proyecto-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+    font-weight: 400;
+    color: #FFF5EE;
+}
+
+.box .descripcion {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #FFF5EE;
+}
+
+.captura {
+    background: #c5bcb7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 /*
 
 .carrusel {
