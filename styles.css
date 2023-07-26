@@ -10,7 +10,7 @@
     font-size: 18px;
   }
   h1{
-    font-size: 100px;
+    font-size: 60px;
   }
 }
 
@@ -21,7 +21,7 @@
     font-size: 15px;
   }
   h1{
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -32,7 +32,7 @@
     font-size: 12px;
   }
   h1{
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -132,10 +132,10 @@ main {
 #principal, #acerca, #proyectos, #tecnologias, #contacto {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10%;
+    padding-right: 10%;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
@@ -153,23 +153,30 @@ h1 {
     background-color: #FFF5EE; 
 }
 
-#principal .foto img{
+.titulo_principal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal-nombre{
+    padding-top: 25px;
+}
+
+.developer{
+    padding-top: 25px;
+}
+
+.foto img{
     display: flex;
     height: 20vw;
     border-radius: 50%;
     min-height: 200px;
 }
-
-.titulo_principal {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70vw;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /*width: 100vw;*/
-}
-
+/*
 .hojas img{
     display: flex;
     width: 7vw;
@@ -177,7 +184,7 @@ h1 {
     height: auto;
     margin-top: 5vh;
 }
-
+*/
 
 /*      -----------  ESTILOS DE ACERCA DE -----------       */
 
@@ -202,43 +209,60 @@ h1 {
 
 /*      -----------  ESTILOS DE TECNOLOGIAS -----------       */
 #tecnologias {
+    position: relative;
     background-color: #FFF5EE;
+    justify-content: center;
     
 }
 
-#tecnologias h2 {
+.subtitulo {
     color: #85B172;
     display: block;
-    margin-right: 50px;
     font-size: 50px;
 }
 
-#tecnologias .tecnologias_logos {
+.tecnologias_logos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    width: 60%;
+    height: 50vh;
+    margin-top: 20px;
+    justify-content: space-between;
 }
-#tecnologias .tecnologias_logos .img {
-    display: flexbox;
-    padding-bottom: 20vh;
-}
-
-@media (width < 768) {
-    #tecnologias{
+@media (max-width: 450px) {
+    .tecnologias_logos {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-    #tecnologias h2{
+    .logos {
+        position: relative;
         display: flex;
-        margin: 0;
+        margin: 4px;
+    }
+    .logos .img {
+        position: absolute;
+        height: 40%;
     }
 }
+
+.logos {
+    position: relative;
+    display: flex;
+    margin: 6px;
+}
+
+.logos .img {
+    position: absolute;
+    height: 100%;
+}
+
 
 /*      -----------  ESTILOS DE PROYECTOS -----------       */
 #proyectos{
+    display: flex;
     background-color: #85B172 ;
     flex-direction: column;
     justify-content: left;
@@ -252,6 +276,21 @@ h2{
     margin-top: 40px;
 }
 
+@media (max-width: 450px) {
+    #proyectos-container {
+        margin: 0 auto;
+        width: 60vw;
+        height: 70vh;
+
+        /* GRID STYLE */
+        display: grid;
+        grid-template-columns: 60vw;
+        grid-template-rows: auto;
+        
+    }
+    
+}
+
 #proyectos-container{
     margin: 0 auto;
     width: 60vw;
@@ -259,8 +298,9 @@ h2{
     /* GRID STYLE */
     display: grid;
     grid-template-columns: 20vw 20vw 20vw;
-    
 }
+
+
 
 .box{
     position: relative;
@@ -298,12 +338,18 @@ h2{
 
 .captura {
     background: #c5bcb7;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: center; 
+}
+
+.captura .img{
+    display: flex;
+    justify-content: center;
+}
 
 /*
 
@@ -515,8 +561,3 @@ footer {
 .autor {
     flex-direction: column;
 }
-
-
-
-
-
