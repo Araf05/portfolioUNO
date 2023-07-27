@@ -54,6 +54,7 @@ h2, h3, h4 {
     font-family: 'Kurale', serif;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*    ------ESTILOS DEL SCROLLBAR-----           */
@@ -262,10 +263,9 @@ h1 {
 
 /*      -----------  ESTILOS DE PROYECTOS -----------       */
 #proyectos{
-    display: flex;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
     background-color: #85B172 ;
-    flex-direction: column;
-    justify-content: left;
     align-items: center;
 }
 
@@ -276,55 +276,68 @@ h2{
     margin-top: 40px;
 }
 
-@media (max-width: 450px) {
-    #proyectos-container {
-        margin: 0 auto;
-        width: 60vw;
-        height: 70vh;
-
-        /* GRID STYLE */
-        display: grid;
-        grid-template-columns: 60vw;
-        grid-template-rows: auto;
-        
-    }
-    
-}
-
-#proyectos-container{
+.proyectos-container{
     margin: 0 auto;
-    width: 60vw;
-
-    /* GRID STYLE */
+    width: 80vw;
     display: grid;
+    grid-template-rows: 80vh;
     grid-template-columns: 20vw 20vw 20vw;
+    justify-content: space-evenly;
+    align-content: center;
+    
+
 }
 
+/* Tabletas */
+@media (max-width: 768px) {
+    .proyectos-container{
+        height: auto;
+        display: grid;
+        margin: auto 0;
+        grid-template-rows: 30%;
+        grid-template-columns: 80%;
+        justify-content: space-evenly;
+    }
 
+}
 
 .box{
     position: relative;
-    height: 60vh;
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    height: 50%;
+    width: 100%;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 120ms;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #736E6B;
+    justify-content: space-evenly;
+    background-color: hsl(23, 4%, 44%, 0.6);
     padding: 0.5em;
     padding-bottom: 3.4em;
-    margin: 0 5px;
+    margin: auto;
+    border-radius: 0 15px;
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+    .box{
+        height: 150%;
+        width: 100%;
+    }
+
 }
 
 .box .proyecto-name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9em;
     position: absolute;
-    left: 5vw;
-    bottom: 5vh;
+    left: 5%;
+    bottom: 30%;
     font-weight: 400;
-    color: #FFF5EE;
+    color: #736E6B;
+    background-color: #FFF5EE;
+    padding: 4px;
+    border-radius: 0 15px;
 }
 
 .box .descripcion {
@@ -332,6 +345,7 @@ h2{
     font-size: 0.9em;
     position: absolute;
     left: 0.625em;
+    right: 0.625em;
     bottom: 0.625em;
     color: #FFF5EE;
 }
@@ -349,86 +363,10 @@ h2{
 .captura .img{
     display: flex;
     justify-content: center;
-}
-
-/*
-
-.carrusel {
-    width: 60vw;
-    max-width: 50vw;
-    overflow-x: hidden;
-}
-
-.tarjeta-container {
-    width: 500vw;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    width: 100%;
+    height: 100%;
     
-
-    transition: all .5s easy;
-    transform: translateX(0%);
 }
-
-.tarjeta {
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: 50vh 10vh 10vh;
-    grid-area: "captura" "p" "tecno";
-    background: #FFF5EE;
-    border-radius: 10px;
-    margin: auto;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 3px 3px forestgreen;
-}
-
-.carrusel .puntos {
-    width: 40vw;
-    padding: 1em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center; 
-}
-
-.carrusel .punto{
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    margin: 1em;
-    list-style: none;
-    background-color: #FFF5EE;
-}
-
-.carrusel .punto.activo{
-    box-shadow: 0 0 20px #c5bcb7;
-}
-
-.captura {
-    width: 30vw;
-}
-
-.tarjeta p a {
-    display: block;
-    font-family: Kurale;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.tecno {
-    display: flex;
-    flex-direction: row;
-    background: #736E6B;
-    justify-content: space-around;
-}
-
-.tarjeta .tecno img {
-    height: 8vh;
-    margin-top: 5px;
-}
-
-*/
 
 /*         --------- ESTILOS DEL FORMULARIO -------          */
 #contacto {

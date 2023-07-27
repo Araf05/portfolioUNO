@@ -4,24 +4,12 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
    
     <meta name="description" content="Hola! soy Araf y este es mi portfolio."/>
     <meta name="theme-color" content="#85B172" />
-    <link rel="icon" size="16x16 32x32 48x48 64x64" type="image/png" href="icon-fav.png"/>
+    <link rel="icon" size="16x16 32x32 48x48 64x64" type="image/png" href="recursos\icon-fav.png"/>
     <title>Araf</title>
     
-   
-    <!-- OG Facebook  -->
-    <meta property="og:title" content="ARAF"/>
-    <meta property="og:description" content="Hola! soy Araf y este es mi portfolio."/>
-    <meta property="og:image" content="icon-fav.png"/>
-    <meta property="og:image:alt" content="Icono del portfolio"/>
-    <!-- OG Twitter-->
-    <meta name="twitter:title" content="ARAF"/>
-    <meta name="twitter:description" content="Hola! soy Araf y este es mi portfolio."/>
-    <meta name="twitter:image:src" content="icono.png"/>
-    <meta name="twitter:image:alt" content="Icono del portfolio"/>
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="styles.css"/>
@@ -37,7 +25,7 @@
 <body>
     <header>
         <nav>
-            <a href='#top' id="nav_araf"><img class="nav_logo" src="icon-fav.png" alt="icon"></a>
+            <a href='#top' id="nav_araf"><img class="nav_logo" src="recursos\icon-fav.png" alt="icon"></a>
             <ul class="nav_menu">  
                 <li><a href="#acerca">Acerca de</a></li>
                 <li><a href="#tecnologias">Tecnologías</a></li>
@@ -52,7 +40,7 @@
       
         <section id="principal">
             <div class="titulo_principal">
-                <div class="foto"><img src="icon.png" alt="Foto"></div>
+                <div class="foto"><img src="recursos\icon.png" alt="Foto"></div>
                 <div class="principal-nombre"><h1>Araceli Fernandez</h1></div>
                 <div class="developer"><h3>Programadora Jr</h3></div>
             </div>
@@ -61,13 +49,13 @@
 
         <section id="acerca">
             <h2>Acerca de</h2>
-            <img src="icon.png" width="200px" height="200px"  alt="Icono del portfolio"/>  
+            <img src="recursos\icon.png" width="200px" height="200px"  alt="Icono del portfolio"/>  
             <h4>Desarrolladora front-end en constante formación 
                 buscando siempre mejorar la experiencia del usuario. 
                 Con capacidad de trabajar en equipo
             </h4>
             <!-- incluir foto, linkedin, github y cv -->
-            <a href="icon.png" target="download" class="btn" download="icono.png">Descargar</a> <!-- hacer que descargue el archivo-->
+            <a href="recursos\icon.png" target="download" class="btn" download="icono.png">Descargar</a> <!-- hacer que descargue el archivo-->
         </section>
 
         <section id="tecnologias">
@@ -78,8 +66,10 @@
                 <div class="logos"> <img src="tecnologias/git.png" height="100vh" alt="git"/> </div>
                 <div class="logos"> <img src="tecnologias/html.png" height="100vh" alt="html5"/> </div>
                 <div class="logos"> <img src="tecnologias/javascript.png" height="100vh" alt="javascript"/> </div>
+                <!--
                 <div class="logos"> <img src="tecnologias/mysql.png" height="100vh" alt="mysql"/> </div>
                 <div class="logos"> <img src="tecnologias/react.png" height="100vh" alt="react"/> </div>
+                -->
             </div>
 
             <!-- incluir logos de los dif lenguajes -->
@@ -87,55 +77,32 @@
 
         <section id="proyectos">
             <h2>Proyectos</h2> 
-            <div id="proyectos-container">
+            <div class="proyectos-container">
                 <div class="box"> 
                     <a href="https://araf05.github.io/Memotest/" target="_blank">
                         <div class="captura">
-                            <img src="proyects/memo.png" height="100vh"  alt="Memotest en Javascript" />
+                            <img src="proyects/memo.png" height="100vh" alt="Memotest en Javascript" />
                         </div>
                         <div class="proyecto-name"><span>MEMOTEST</span></div>
                         <div class="descripcion"><span>Memotest desarrollado con HTML, CSS y JS</span></div>
                     </a>
                 </div>
                 <div class="box">
-                    <div class="captura">box 2</div>
-                    <div class="proyecto-name"><span>Proyecto 2</span></div>
-                    <div class="descripcion"><span class="descripcion">Breve descripcion del proyecto</span></div> 
+                    <a href=" " target="_blank">
+                        <div class="captura">
+                            <img src="proyects/500Game.png" height="100vh" alt="500Game en C++" />
+                        </div>
+                        <div class="proyecto-name"><span>500Game</span></div>
+                        <div class="descripcion"><span>Juego de dados en C++</span></div> 
+                    </a>
                 </div>
                 <div class="box"> 
                     <div class="captura">box 3</div>
                     <div class="proyecto-name"><span>Proyecto 3</span></div>
-                    <div class="descripcion"><span class="descripcion">Breve descripcion del proyecto</span></div> 
-                </div>
-                
+                    <div class="descripcion"><span>Breve descripcion del proyecto</span></div> 
+                </div> 
             </div>
-            <!-- 
-            <div class="carrusel">
-                <div class="tarjeta-container">
-                    <div class="tarjeta">
-                        <img class="captura" src="proyects/memo.png" alt="memo">
-                        <p><a href="https://araf05.github.io/Memotest/" target="_blank">Memotest</a></p>
-                        <div class="tecno">
-                            <img src="tecnologias/javascript.png" alt="Javascript">
-                            <img src="tecnologias/html.png" alt="HTML5">
-                            <img src="tecnologias/css3.png" alt="CSS3">
-                        </div> 
 
-                    </div> 
-                    <div class="tarjeta">1</div>
-                    <div class="tarjeta">2</div>
-                    <div class="tarjeta">3</div>
-                    <div class="tarjeta">4</div>
-                    
-                </div>
-                <ul class="puntos">
-                    <li class="punto activo"></li>
-                    <li class="punto"></li>
-                    <li class="punto"></li>
-                    <li class="punto"></li>
-                </ul>
-            </div>
-            -->
         </section>
 
         <section id="contacto" aria-labelledby="contacto-headding"> 
