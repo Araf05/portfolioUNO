@@ -177,15 +177,6 @@ h1 {
     border-radius: 50%;
     min-height: 200px;
 }
-/*
-.hojas img{
-    display: flex;
-    width: 7vw;
-    max-width: 60px;
-    height: auto;
-    margin-top: 5vh;
-}
-*/
 
 /*      -----------  ESTILOS DE ACERCA DE -----------       */
 
@@ -205,6 +196,19 @@ h1 {
     font-size: 18px;
     color: #FFF5EE;
     text-decoration: none;
+}
+
+.links-box {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-content: center;
+    filter: drop-shadow(0 0 0.75rem #736E6B) opacity(0.7);
+}
+
+.links:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem #FFF5EE);
 }
 
 
