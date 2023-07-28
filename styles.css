@@ -228,31 +228,27 @@ h1 {
     width: 60%;
     height: 50vh;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
+
 @media (max-width: 450px) {
     .tecnologias_logos {
-        display: flex;
         flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+
     }
     .logos {
         position: relative;
         display: flex;
-        margin: 4px;
-    }
-    .logos .img {
-        position: absolute;
-        height: 40%;
+        margin: auto;
     }
 }
+
 
 .logos {
     position: relative;
     display: flex;
-    margin: 6px;
+    margin: 8px;
     filter: drop-shadow(0 0 20px #736E6B);
 }
 
