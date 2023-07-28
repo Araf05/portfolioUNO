@@ -25,6 +25,12 @@ window.onscroll = function(){
     buttonUp.style.transform = 'scale(0)';
   }
 }
+
+
+
+
+
+
 /*
 // CARRUSEL
 const tarjetaContainer = document.querySelector('.tarjeta-container')
