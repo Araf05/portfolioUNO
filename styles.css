@@ -211,7 +211,7 @@ h1 {
     background-image: url(recursos/marco.png);
     background-size: cover;
     justify-content: center;
-    filter: opacity(0.8);
+    z-index: 1;
 }
 
 /*      -----------  ESTILOS DE ACERCA DE -----------       */
@@ -219,7 +219,6 @@ h1 {
 #acerca {
     flex-direction: column;
     justify-content: space-around;
-    /*background-color: #85B172 ;*/
 }
 
 .links-box {
@@ -246,7 +245,6 @@ h1 {
 /*      -----------  ESTILOS DE TECNOLOGIAS -----------       */
 #tecnologias {
     position: relative;
-    /*background-color: #FFF5EE;*/
     justify-content: center;
     
 }
@@ -302,7 +300,6 @@ h1 {
 #proyectos{
     display: grid;
     grid-template-rows: 20vh 60vh;
-    /*background-color: #85B172 ;*/
     align-items: center;
 }
 
@@ -436,7 +433,6 @@ h2{
 
 /*         --------- ESTILOS DEL FORMULARIO -------          */
 #contacto {
-   /* background-color: #FFF5EE;*/
     flex-direction: column;
     align-content: space-evenly;
 }
