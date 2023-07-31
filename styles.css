@@ -142,8 +142,27 @@ main {
     justify-content: space-around;
     box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
     overflow: hidden;
-    z-index: 0;
-    
+    z-index: 0;  
+}
+
+.divisor {
+    border-top: 20px solid #736E6B;
+    border-bottom: 20px solid #736E6B;
+    border-top-style: double;
+    border-bottom-style: double;
+    height: 200px;
+    width: 100%; 
+    background: radial-gradient(circle, rgba(197,188,183,1)  0%, rgba(255,245,238,1) 32%, rgba(214,205,199,1) 62%, rgba(149,131,120,1) 83%);
+}
+
+.divisor-img {
+    height: 100%;
+    width: 150px;
+    background-image: url(recursos/aves.png);
+    background-size: contain;
+    background-position: center;
+    filter: grayscale(30%);
+    margin: auto;
 }
 
 /*         -------- ESTILOS DE PRINCIPAL ---------       */
